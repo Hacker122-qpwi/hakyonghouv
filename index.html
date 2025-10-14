@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hak Younghouv, ហាក់ យ៉ុងហ្អោវ" />
+    <meta name="keywords" content="Hak Younghouv, ហាក់ យ៉ុងហ្អោវ, hak, yonghouvh" />
+    <meta name="author" content="Hak Younghouv" />
+    <meta property="og:title" content="Hak Younghouv" />
+    <meta property="og:description" content="គេហទំព័រផ្លូវការរបស់ Hak Younghouv" />
+    <meta property="og:url" content="https://hakyounghouv.vercel.app" />
+    <meta property="og:type" content="website" />
+    <title>ហាក់ យ៉ុងហ្អោវ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&family=Kings&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Moul&family=Noto+Serif+Khmer:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/vscode/client/style/index.css" />
+    <link rel="stylesheet" href="/vscode/client/Animation/Animation.css" />
+  </head>
+  <body>
+
+    <!-- Start Affic -->
+    <!-- Preloader / Splash Screen -->
+
+    <div id="preloader">
+        <div class="spinner"></div>
+        <p>កំពុងផ្ទុកគេហទំព័រ...</p>
+    </div>
+
+    <!-- Actual website content -->
+
+    <div id="main-content" style="display: none;">
+        <header>Header here</header>
+        <main>Main content here</main>
+        <footer>Footer here</footer>
+    </div>
+
+    <!-- End Affic -->
+    <!-- Header Page -->
+
+    <header class="header-index header" id="header" style="width: 100%; height: 70px; position: relative; top: 0; left: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 20px;">
+        <!-- #header index.html -->
+        <!-- Title Name -->
+
+        <h1 class="name-logo title animate-onload delay-1">Hak Younghouv</h1>
+
+        <!-- Menu -->
+
+        <nav class="navbar" id="navbar">    <!-- #navbar -->
+            <ul class="ul" style="margin: 0; padding: 0; display: flex;">
+                <li class="list-index list-1 animate-onload delay-1"><a class="link-style" href="/index.html"><span class="span-list">ទំព័រដើម</span></a></li>
+                <li class="list-index list-1 animate-onload delay-1"><a class="link-style" onclick="nexpage()"><span class="span-list">អំពីខ្ញុំ</span></a></li>
+                <li class="list-index list-1 animate-onload delay-1"><a class="link-style" href="#"><span class="span-list">ច្រើនទៀត</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Page -->
+
+    <main class="main-index main" id="main" style="width: 100%; border: 1px solid #000; position: relative; left: 0; top: 0;">
+
+        <!-- #main index.html -->
+
+        <p class="title-main p-text animate-onload delay-2">សូមស្វាគមន៍អ្នកទាំងអស់គ្នាមកកាន់គេហទំព័រផ្លូវការរបស់ខ្ញុំ</p>
+
+        <!-- Articles -->
+        
+        <section class="articles" style="width: 97%; margin: 20px; display: flex; justify-content: space-between; align-items: center;">
+            <div class="article box-articles animate-onload delay-3">
+                <h1 class="title" style="font-family: moul; font-weight: 100; font-size: 1.5rem; margin: 10px; margin-left: 50px;">ខ្លះៗអំពីខ្ញុំ</h1>
+                <p class="p-text" style="font-size: 1.2rem; text-align: left;">
+                    ខ្ញុំបាទឈ្មោះហាក់ យ៉ុងហ្អោវ ជាសិស្សទើបតែបញ្ចប់ការសិក្សានៅថ្នាក់ទី១២ ក្នុងឆ្នាំ ២០២៤ ~ ២០២៥ ហើយខ្ញុំក៏បានបង្កើតនូវគេហទំព័រមួយដើម្បីចងក្រងនូវព័ត៌មានរបស់ខ្ញុំក៏ដូចជាព័ត៌មានផ្សេងៗទៀតផងដែរ។
+                </p>
+                <button class="button-nextpage button animate-onload delay-1" onclick="nexpage()">ទំព័របន្ទាប់</button>
+            </div>
+            <div class="image box-articles" style="display: flex; align-items: center; justify-content: center;">
+                <div class="image-user animate-onload delay-4">
+                    <img src="./vscode/client/assets/image-user.jpg" alt="image">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer Page -->
+
+    <Footer class="footer-index footer" id="footer" style="width: 100%; height: 50px; display: flex; align-items: center; justify-content: center;">
+        <p style="color: #fff;">&copy; 2026 រក្សាសិទ្ធគ្រប់យ៉ាងដោយ ហាក់ យ៉ុងហ្អោវ</p>
+    </Footer>
+
+    <script src="./vscode/client/Javascript/index.js"></script>
+    <script src="./vscode/client/Animation/Animation.js"></script>
+    <script src="./vscode/Backend/Link/link.js"></script>
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+    crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
